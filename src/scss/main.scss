@@ -1,0 +1,8 @@
+$test: red;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  background-color: $test;
+  margin: 30px;
+}
