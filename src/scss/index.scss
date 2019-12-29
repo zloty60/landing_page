@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "./base/break-point.scss";
+
+body {
+  background-color: red;
+  @include breakPoint(sm) {
+    background-color: skyblue;
+  }
+}
