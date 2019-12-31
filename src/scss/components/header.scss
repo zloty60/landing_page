@@ -12,9 +12,19 @@
   &__content {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &__input {
     margin-top: 2.5rem;
+    @include breakPoint(sm) {
+      margin-top: 4.375rem;
+    }
+    @include breakPoint(md) {
+      margin-top: 5rem;
+    }
+    @include breakPoint(lg) {
+      margin-top: 5.3125rem;
+    }
   }
 }

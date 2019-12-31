@@ -1,6 +1,7 @@
 .input {
   display: flex;
-  flex-grow: 1;
+  max-width: 47.5rem;
+  width: 100%;
   &__field {
     border: none;
     display: block;
@@ -8,6 +9,12 @@
     padding: 0.375rem;
     border-top-left-radius: 0.3125rem;
     border-bottom-left-radius: 0.3125rem;
+    @include breakPoint(sm) {
+      padding: 0.675rem;
+    }
+    @include breakPoint(md) {
+      padding: 1.125rem 1.875rem;
+    }
     &::placeholder {
       color: $input-dark-color-placeholder;
     }
