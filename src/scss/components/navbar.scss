@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 35px;
+  padding-top: 2.1875rem;
+  z-index: 10;
 
   &__list {
     display: flex;
@@ -19,7 +20,7 @@
     }
     &--desktop {
       display: none;
-      margin-left: 38px;
+      margin-left: 2.375rem;
       @include breakPoint(md) {
         display: block;
       }
@@ -33,13 +34,13 @@
     letter-spacing: 1px;
     transition: color 0.5s;
     &:hover {
-      color: #e7434e;
+      color: $main-red-color;
     }
 
     &--border {
       border: 2px solid;
-      padding: 10px 32px;
-      border-radius: 5px;
+      padding: 0.625rem 2rem;
+      border-radius: 0.3125rem;
       text-align: center;
     }
   }

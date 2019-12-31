@@ -9,7 +9,7 @@
 @import "./base/base.scss";
 
 @import "./components/navbar.scss";
-
-body {
-  background-color: slategrey;
-}
+@import "./components/header.scss";
+@import "./components/headline.scss";
+@import "./components/input.scss";
+@import "./components/button.scss";
