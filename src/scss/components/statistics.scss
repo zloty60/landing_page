@@ -1,0 +1,60 @@
+.statistics {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  top: -4.9375rem;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 6px #b3b3b3;
+  @include breakPoint(md) {
+    top: -5.5rem;
+  }
+  @include breakPoint(lg) {
+    top: -3.875rem;
+  }
+  &__ul {
+    padding-inline-start: 0;
+    text-align: center;
+  }
+
+  &__num {
+    color: #343434;
+    display: block;
+    font-weight: bold;
+    font-size: 1.375rem;
+    @include breakPoint(md) {
+      font-size: 1.625rem;
+    }
+    @include breakPoint(lg) {
+      font-size: 1.875rem;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 0.9735rem;
+    color: #717171;
+    @include breakPoint(md) {
+      font-size: 1.0625rem;
+    }
+    @include breakPoint(lg) {
+      font-size: 1.125rem;
+    }
+  }
+  &__item {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    @include breakPoint(lg) {
+      margin-top: 1.625rem;
+      margin-bottom: 1.625rem;
+    }
+    &--border {
+      border-right: 2px solid #d8d8d8;
+      &-center {
+        border: none;
+        @include breakPoint(lg) {
+          border-right: 2px solid #d8d8d8;
+        }
+      }
+    }
+  }
+}
