@@ -10,6 +10,12 @@
   text-align: center;
   border-radius: 0.3125rem;
   transition: background-color 0.5s;
+  @include breakPoint(sm) {
+    padding: 0.675rem 1.1875rem;
+  }
+  @include breakPoint(md) {
+    padding: 1.3rem 2rem;
+  }
   &:hover {
     background-color: darken($main-red-color, 3%);
   }
