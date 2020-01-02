@@ -1,0 +1,23 @@
+.section {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  @include breakPoint(sm) {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  @include breakPoint(md) {
+    padding-top: 3.4375rem;
+    padding-bottom: 3.4375rem;
+  }
+  @include breakPoint(lg) {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+  }
+  @include breakPoint(xl) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  &--explore {
+    padding-top: 0;
+  }
+}

@@ -1,5 +1,5 @@
 .button {
-  display: inline-block;
+  display: block;
   background-color: $main-red-color;
   padding: 0.5rem 0.9375rem;
   border: none;
@@ -36,6 +36,16 @@
         margin-right: 0.6875rem;
         display: block;
       }
+    }
+  }
+  &--light {
+    background-color: #ffffff;
+    color: #343434;
+    border: 1px solid #909090;
+    transition: background-color 0.5s, color 0.5s;
+    &:hover {
+      background-color: #909090;
+      color: #ffffff;
     }
   }
 }

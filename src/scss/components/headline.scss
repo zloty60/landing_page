@@ -27,7 +27,18 @@
     }
   }
   &--dark {
+    font-size: 1.875rem;
+    letter-spacing: 1px;
+    color: #343435;
+    text-align: center;
   }
   &--description {
+    color: #717171;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin-top: 1.25rem;
+    max-width: 51.875rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
