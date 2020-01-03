@@ -20,4 +20,10 @@
   &--explore {
     padding-top: 0;
   }
+  &--boats {
+    padding-top: 3.75rem;
+    @include breakPoint(sm) {
+      padding-top: 5rem;
+    }
+  }
 }
