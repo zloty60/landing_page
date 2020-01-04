@@ -1,0 +1,68 @@
+.footer {
+  background-color: #404040;
+  position: relative;
+  &::before {
+    content: "";
+    height: 6px;
+    width: 100%;
+    display: block;
+    background-color: $main-red-color;
+    position: absolute;
+    top: 0;
+  }
+  &__headline {
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    &--mt {
+      margin-top: 1.5625rem;
+    }
+    &--mb {
+      margin-bottom: 0.75rem;
+      @include breakPoint(xl) {
+        margin-bottom: 1.5625rem;
+      }
+    }
+  }
+  &__list {
+    padding-inline-start: 0;
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+  &__list-icons {
+    padding-inline-start: 0;
+    display: flex;
+    &--mt {
+      margin-top: 1.5625rem;
+    }
+  }
+  &__icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: #717171;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.5s;
+    &:hover {
+      background-color: darken(#717171, 6%);
+    }
+    &--mr {
+      margin-right: 1.25rem;
+    }
+  }
+  &__input {
+    margin-top: 1.5625rem;
+    &--no-gutters {
+      @include breakPoint(xl) {
+        padding-right: 0;
+      }
+    }
+  }
+}
