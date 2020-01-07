@@ -5,25 +5,81 @@
   right: 0;
   padding-top: 2.1875rem;
   z-index: 10;
-
+  background-color: #3a5177;
+  height: 50px;
+  opacity: 0.95;
+  @include breakPoint(md) {
+    height: 65px;
+    padding: 0;
+  }
   &__list {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
+    display: none;
+
+    &--active {
+      padding-inline-start: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #3a5177;
+      z-index: 9;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: 40px;
+      @include breakPoint(md) {
+        flex-direction: row;
+        position: static;
+        padding-bottom: 0;
+      }
+    }
+    @include breakPoint(md) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: flex-end;
+      margin: 0;
+      align-items: center;
+      height: 65px;
+    }
+  }
+
+  &__menu-btn {
+    border: none;
+    background-color: transparent;
+    z-index: 11;
+    width: 23px;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    @include breakPoint(md) {
+      display: none;
+    }
+    &--top {
+      width: 100%;
+      height: 3px;
+      margin-bottom: 3px;
+      background-color: #ffffff;
+    }
+    &--middle {
+      width: 100%;
+      height: 3px;
+      background-color: #ffffff;
+      margin-bottom: 3px;
+    }
+    &--bottom {
+      height: 3px;
+      background-color: #ffffff;
+    }
   }
 
   &__item {
-    &--mobile {
-      @include breakPoint(md) {
-        display: none;
-      }
-    }
-    &--desktop {
-      display: none;
+    margin-top: 1.85rem;
+    @include breakPoint(md) {
       margin-left: 2.375rem;
-      @include breakPoint(md) {
-        display: block;
-      }
+      margin-top: 0;
     }
   }
 
