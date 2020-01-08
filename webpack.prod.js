@@ -11,7 +11,7 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "main.[contentHash].js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "docs")
   },
   optimization: {
     minimizer: [
@@ -20,9 +20,9 @@ module.exports = merge(common, {
       new HtmlWebpackPlugin({
         template: "./src/template.html",
         minify: {
-          // removeAttributeQuotes: true,
-          // collapseWhitespace: true,
-          // removeComments: true
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
         }
       })
     ]
