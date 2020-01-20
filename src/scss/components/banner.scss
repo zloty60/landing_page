@@ -1,12 +1,20 @@
 .banner {
-  background-color: #555555;
-  background-image: url("/src/assets/bg2.png");
-  background-size: cover;
-  background-position: left;
+  // background-image: url("/src/assets/bg2.png");
+  // background-size: cover;
+  // background-position: left;
+  position: relative;
   height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  &__img {
+    background-color: #555555;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+  }
   @include breakPoint(sm) {
     background-position: bottom;
   }
